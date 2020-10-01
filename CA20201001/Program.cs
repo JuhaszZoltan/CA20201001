@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,12 +17,12 @@ namespace CA20201001
             float v = 15F;
             for (int i = 0; i < t.Length; i++)
             {
-                //határértékek:
-                //Console.WriteLine($"{(int)k} --- {(int)v}");
                 t[i] =  rnd.Next((int)k, (int)v);
+                Console.WriteLine(
+                    "{0,2}.it: [{1}  - {2,3}): {3} ",
+                    i + 1, (int)k, (int)v, t[i]);
                 k += 4.5F;
                 v += 4.5F;
-                Console.Write($"{t[i]} ");
             }
             Console.ReadKey();
         }
