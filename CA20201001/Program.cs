@@ -19,7 +19,7 @@ namespace CA20201001
             {
                 t[i] =  rnd.Next((int)k, (int)v);
                 Console.WriteLine(
-                    "{0,2}.it: [{1}  - {2,3}): {3} ",
+                    "{0,2}.it: [{1}  - {2,3}): {3}",
                     i + 1, (int)k, (int)v, t[i]);
                 k += 4.5F;
                 v += 4.5F;
